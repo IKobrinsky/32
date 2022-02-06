@@ -1,0 +1,2 @@
+CREATE DEFINER=`vionzawd_test`@`localhost` PROCEDURE `AddUser` (IN `login` VARCHAR(30), IN `password` VARCHAR(30), IN `hash` VARCHAR(30))  NO SQL
+insert users (usrLogin, usrPassword, usrHash) select login, password, hash
